@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - India lab 3</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!---- Rishi Doreswamy
+11/21/22 
+Dr. Cumbie-->
+<div class="row">
+ <div class="col-md-6 offset-md-3 card mt-3">
+
+  <h1> Welcome to the bowling team.</h1>
+  <p>Enter your name and personal information to sign up for bowling team roster and add name to the roster.</p>
+<h2> Enter your name</h2>
+  
+
+    
+<!---- Enter details about people
+    ----> 
+   <label for="fname">First name:</label>
+<input type="text" id="fname" name="fname"><br>
+
+  <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <h2> Enter your personal information.</h2>
+    <label for "emailaddress"> Email address</label>
+    <input type = "text" id= "emailaddress" name= "emailaddress"><br><br>
+    <label  for "dateofbirth"> Date of Birth(mm/dd/yyyy)</label>
+    <input type ="text" id= "dateofbirth" name="dateofbirth">
+    
+    <p> To help us select a team please tell us how long you have been bowling for.
+      
+    <label for="Number">
+      Enter Number (between 1 and 30):
+    </label>
+    <input type="Number" id="Number" 
+           name="Number" min="1" max="30">
+
+
+    
+    
+     <div class="mb-3 mt-3">
+    <p> Enter your password
+    <input type="password" id="password" name="password"><br />
+   <label  for "today"> Enter registeration date and time for our records</p> (mm/dd/yyyy)</label>
+   
+  <label for="datemin">Enter a date after November 1, 2022 :</label>
+ <input type="datetime-local" id="datetime"
+         name="datetime"> <br>
+    
+  
+      <div class="col-md-5 card">
+      <div class="card-body">
+        <h4 class="card-title">User Name. </h4>
+  
+        <label for="noSpaces" class="form-label">User Name</label>
+        <input id="noSpaces" class="form-control" type="text" placeholder="Enter User Name (no spaces)" name="noSpaces">
+        <!-- this is where the validation will appear, the .next() dom object <p> -->
+        <p class="card-footer"></p>
+      </div>
+      <p></p>
+    </div>
+
+    <!-- only numbers keyup (or keydown)   -->
+    <div class="col-md-5 m-l-2 card">
+      <div class="card-body"> 
+        <!-- go output  
+          ----> 
+    
+  <button id="sendName">Go! </button>
+   <div id="greetingOutput"></div>
+ <div id="result"></div>  
+ <p>Please select your level:</p>
+    <div>
+    <input type="radio" name="level" value="beginner" id="beginner"     required>
+  <label for="beginner">beginner</label>
+</div>
+<div>
+  <input type="radio" name="level" value="intermediate" id="intermediate" required>
+  <label for="intermediate">intermediate</label>
+</div>
+<div>
+  <input type="radio" name="level" value="advanced" id="advanced" required>
+  <label for="advanced">advanced</label>
+</div>
+<div>
+  </label><br>
+    <div>
+     <p> Submit to get your team assignment 
+  <button id="btn">Show team assingment</button>
+</p>
+<p id="demo"></p>
+                    
+    
+<p>Thank you for signing up for the bowling team. We're looking forward to a great season. Please call us if you have any questions. </p>
+  </div> 
+</div> 
+  <!-- java script bootstrap 
+      ---> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="scripts/india.js"></script>
+    <script src="scripts/ajax.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
