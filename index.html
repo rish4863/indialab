@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - India lab 3</title>
-  
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!---- Rishi Doreswamy
-11/21/22 
-Dr. Cumbie-->
 <div class="row">
- <div class="col-md-6 offset-md-3 card mt-3">
+  <div class="col-md-6 offset-md-3 card mt-3">
 
   <h1> Welcome to the bowling team.</h1>
   <p>Enter your name and personal information to sign up for bowling team roster and add name to the roster.</p>
+    <button id="btnLoadData" class="btn btn-secondary">load json</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 <h2> Enter your name</h2>
   
 
     
-<!---- Enter details about people
-    ----> 
+
    <label for="fname">First name:</label>
 <input type="text" id="fname" name="fname"><br>
 
@@ -33,31 +25,28 @@ Dr. Cumbie-->
     <label  for "dateofbirth"> Date of Birth(mm/dd/yyyy)</label>
     <input type ="text" id= "dateofbirth" name="dateofbirth">
     
-    <p> To help us select a team please tell us how long you have been bowling for.
+    <p> To help us select a team please indicate whether you were born before 1980 or after 1981.
       
-    <label for="Number">
-      Enter Number (between 1 and 30):
-    </label>
-    <input type="Number" id="Number" 
-           name="Number" min="1" max="30">
+      <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
 
-
+  <label for="datemin">Enter a date after 1981-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
     
     
      <div class="mb-3 mt-3">
     <p> Enter your password
     <input type="password" id="password" name="password"><br />
-   <label  for "today"> Enter registeration date and time for our records</p> (mm/dd/yyyy)</label>
-   
-  <label for="datemin">Enter a date after November 1, 2022 :</label>
- <input type="datetime-local" id="datetime"
+ <p> Choose todays date for our records
+   <label  for "today"> todays date (mm/dd/yyyy)</label>
+   <p> Enter todays date and time for our records</p>
+  <input type="datetime-local" id="datetime"
          name="datetime"> <br>
-    
   
       <div class="col-md-5 card">
       <div class="card-body">
         <h4 class="card-title">User Name. </h4>
-  
+        <h5>validate when clicked off (blur)</h5>
         <label for="noSpaces" class="form-label">User Name</label>
         <input id="noSpaces" class="form-control" type="text" placeholder="Enter User Name (no spaces)" name="noSpaces">
         <!-- this is where the validation will appear, the .next() dom object <p> -->
@@ -69,15 +58,13 @@ Dr. Cumbie-->
     <!-- only numbers keyup (or keydown)   -->
     <div class="col-md-5 m-l-2 card">
       <div class="card-body"> 
-        <!-- go output  
-          ----> 
     
   <button id="sendName">Go! </button>
    <div id="greetingOutput"></div>
  <div id="result"></div>  
- <p>Please select your level:</p>
+        <p>Please select your level:</p>
     <div>
-    <input type="radio" name="level" value="beginner" id="beginner"     required>
+  <input type="radio" name="level" value="beginner" id="beginner" required>
   <label for="beginner">beginner</label>
 </div>
 <div>
@@ -91,24 +78,17 @@ Dr. Cumbie-->
 <div>
   </label><br>
     <div>
-     <p> Submit to get your team assignment 
-  <button id="btn">Show team assingment</button>
+  <button id="btn">Show level</button>
 </p>
-<p id="demo"></p>
+
                     
     
 <p>Thank you for signing up for the bowling team. We're looking forward to a great season. Please call us if you have any questions. </p>
   </div> 
 </div> 
-  <!-- java script bootstrap 
-      ---> 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="scripts/india.js"></script>
-    <script src="scripts/ajax.js"></script>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
-</body>
-</html>
+    <script src="scripts/ajax.js"></script>       
